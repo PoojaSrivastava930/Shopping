@@ -1,0 +1,8 @@
+<div  class="grid-container">
+    <div *ngFor="let product of productList" class="grid-item">
+        <img src="{{ product.img }}">
+        <div class="brand-name">{{ product.brand }}</div>
+        <div >{{ product.name }}</div>
+    </div>
+</div>
+<button type="button" class="backtocartbtn" (click)="backToList()">Back</button>
